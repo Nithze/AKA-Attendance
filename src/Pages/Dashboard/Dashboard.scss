@@ -65,11 +65,21 @@
   width: 100%;
   display: flex;
   box-sizing: border-box;
+  flex-direction: column;
+
+
+  .present:active {
+    background-color: #1a1a1a;
+    border: 1px solid #ff700f;
+  }
 
   .present {
+    user-select: none;
+    transition: ease 0.2s;
     display: flex;
     justify-content: space-between;
     width: 100%;
+    box-sizing: border-box;
     height: 80px;
     background-color: #222;
     padding: 5px 20px 5px 20px;
@@ -82,7 +92,7 @@
       align-items: center;
 
       .icon {
-        font-size: 30px;
+        font-size: 40px;
         color: #777;
         background-color: #333;
         padding: 5px;
@@ -122,6 +132,7 @@
       .header {
         color: #ff700f;
       }
+
       .subheader {
         font-size: 12px;
         color: #777;
@@ -132,7 +143,112 @@
 
   // present end
   .other-action {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+
+    .left:active {
+      background-color: #1a1a1a;
+      border: 1px solid #ff700f;
+    }
+
+    .left {
+      display: flex;
+      transition: ease 0.2s;
+      width: 50%;
+      user-select: none;
+      height: 80px;
+      background-color: #222;
+      border-radius: 4px;
+      padding: 5px 20px 5px 20px;
+      box-sizing: border-box;
+      gap: 15px;
+
+      .icon {
+        font-size: 40px;
+        color: #777;
+        background-color: #333;
+        padding: 5px;
+        border-radius: 4px;
+        display: flex;
+        align-self: center;
+      }
+
+      .info {
+        gap: 5px;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+
+        p {
+          margin: 0;
+        }
+
+        .header {
+          color: #ff700f;
+        }
+
+        .subheader {
+          font-size: 10px;
+          color: #777;
+        }
+      }
+    }
+
+    // end left
+    .right:active {
+      background-color: #1a1a1a;
+      border: 1px solid #ff700f;
+    }
+
+    .right {
+      display: flex;
+      transition: ease 0.2s;
+      user-select: none;
+      width: 50%;
+      height: 80px;
+      background-color: #222;
+      border-radius: 4px;
+      padding: 5px 20px 5px 20px;
+      box-sizing: border-box;
+      gap: 15px;
+
+      .icon {
+        font-size: 40px;
+        color: #777;
+        background-color: #333;
+        padding: 5px;
+        border-radius: 4px;
+        display: flex;
+        align-self: center;
+      }
+
+      .info {
+        gap: 5px;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+
+        p {
+          margin: 0;
+        }
+
+        .header {
+          color: #ff700f;
+        }
+
+        .subheader {
+          font-size: 10px;
+          color: #777;
+        }
+      }
+    }
+
+    // end right
 
   }
 
+  // end other action
 }

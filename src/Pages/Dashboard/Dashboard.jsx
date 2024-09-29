@@ -48,8 +48,22 @@ export const Dashboard = () => {
 
                     <div className="other-action">
                         <div className="left">
+                            <div className="icon">
+                                <i className='bx bx-collapse-horizontal'></i>
+                            </div>
+                            <div className="info">
+                                <p className="header">Close</p>
+                                <p className="subheader">07:00 PM</p>
+                            </div>
                         </div>
                         <div className="right">
+                            <div className="icon">
+                                <i className='bx bxs-hand'></i>
+                            </div>
+                            <div className="info">
+                                <p className="header">Request</p>
+                                <p className="subheader">07:00 PM</p>
+                            </div>
                         </div>
                     </div>
                 </div>
