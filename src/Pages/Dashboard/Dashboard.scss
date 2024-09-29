@@ -69,8 +69,9 @@
 
 
   .present:active {
-    background-color: #1a1a1a;
-    border: 1px solid #ff700f;
+    background-color: #000;
+    outline: 1px solid #ff0000;
+
   }
 
   .present {
@@ -81,7 +82,7 @@
     width: 100%;
     box-sizing: border-box;
     height: 80px;
-    background-color: #222;
+    background-color: #161617;
     padding: 5px 20px 5px 20px;
     border-radius: 4px;
 
@@ -94,7 +95,7 @@
       .icon {
         font-size: 40px;
         color: #777;
-        background-color: #333;
+        background-color: #1b1b1c;
         padding: 5px;
         border-radius: 4px;
         display: flex;
@@ -130,7 +131,7 @@
       }
 
       .header {
-        color: #ff700f;
+        color: #ff0000;
       }
 
       .subheader {
@@ -150,8 +151,9 @@
     margin-top: 15px;
 
     .left:active {
-      background-color: #1a1a1a;
-      border: 1px solid #ff700f;
+      background-color: #000;
+      outline: 1px solid #ff0000;
+
     }
 
     .left {
@@ -160,7 +162,7 @@
       width: 50%;
       user-select: none;
       height: 80px;
-      background-color: #222;
+      background-color: #161617;
       border-radius: 4px;
       padding: 5px 20px 5px 20px;
       box-sizing: border-box;
@@ -169,7 +171,7 @@
       .icon {
         font-size: 40px;
         color: #777;
-        background-color: #333;
+        background-color: #1b1b1c;
         padding: 5px;
         border-radius: 4px;
         display: flex;
@@ -187,7 +189,7 @@
         }
 
         .header {
-          color: #ff700f;
+          color: #ff0000;
         }
 
         .subheader {
@@ -199,26 +201,27 @@
 
     // end left
     .right:active {
-      background-color: #1a1a1a;
-      border: 1px solid #ff700f;
+      background-color: #000;
+      outline: 1px solid #ff0000;
     }
 
     .right {
       display: flex;
+      box-sizing: border-box;
       transition: ease 0.2s;
       user-select: none;
       width: 50%;
       height: 80px;
-      background-color: #222;
+      // background-color: #161617;
+      border: 1px solid #222;
       border-radius: 4px;
       padding: 5px 20px 5px 20px;
-      box-sizing: border-box;
       gap: 15px;
 
       .icon {
         font-size: 40px;
         color: #777;
-        background-color: #333;
+        background-color: #1b1b1c;
         padding: 5px;
         border-radius: 4px;
         display: flex;
@@ -236,7 +239,7 @@
         }
 
         .header {
-          color: #ff700f;
+          color: #ff0000;
         }
 
         .subheader {
