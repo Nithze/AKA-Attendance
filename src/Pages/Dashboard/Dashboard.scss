@@ -1,11 +1,12 @@
 .navbar {
   width: 100%;
   align-items: center;
-  height: 50px;
+  height: 70px;
   box-sizing: border-box;
   padding: 16px;
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid #27272a;
 
   .title {}
 
@@ -16,7 +17,7 @@
   }
 
   i {
-    color: var(--warning-color);
+    color: #ff0000;
   }
 
 }
@@ -59,8 +60,8 @@
 
 }
 
-hr {
-  margin: 0;
-  padding: 0;
-  color: var(--border-color);
-}
+// hr {
+//   margin: 0;
+//   padding: 0;
+//   color: #27272a;
+// }

@@ -1,20 +1,3 @@
-:root {
-    --primary-bg-color: #09090B;
-    --secondary-bg-color: #28282A;
-    --hover-bg-color: #141414;
-    --text-color: #fff;
-    --text-color-gray: #999;
-    --warning-color: #ff0000;
-    --border-color: #28282A;
-    --font-family: Arial, sans-serif;
-    --btn-padding: 10px 25px;
-    --btn-font-size: 16px;
-    --btn-border-radius: 8px;
-    --transition-duration: 0.2s;
-    --cursor-border-color: white;
-    --cursor-inner-border-color: gray;
-}
-
 body {
     margin: 0;
     padding: 0;

@@ -15,7 +15,7 @@ export const Dashboard = () => {
                     </div>
                 </div>
                 {/* navbar end */}
-                <hr></hr>
+                {/* <hr></hr> */}
 
                 <div className="profile">
                     <div className="info">
