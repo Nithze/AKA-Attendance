@@ -14,9 +14,48 @@
     gap: 5px;
     align-items: center;
   }
+
   i {
     color: var(--warning-color);
   }
+
+}
+
+.profile {
+  padding: 16px;
+  gap: 5px;
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+
+  .info {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+
+    .name {
+      font-size: 16px;
+    }
+
+    .nik {
+      font-size: 12px;
+      color: #777;
+    }
+  }
+
+  .role {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    text-align: right;
+
+    .salary {
+      font-size: 12px;
+      color: #777;
+    }
+  }
+
 
 }
 
