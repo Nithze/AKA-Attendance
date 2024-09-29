@@ -11,9 +11,10 @@ export const Dashboard = () => {
                     </div>
                     <div className="logout">
                         <p>Azhar</p>
-                        <p>Logout</p>
+                        <i class='bx bx-log-out'></i>
                     </div>
                 </div>
+                <hr></hr>
             </div>
         </>
     )

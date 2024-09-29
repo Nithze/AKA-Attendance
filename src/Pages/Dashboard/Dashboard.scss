@@ -1,5 +1,27 @@
 .navbar {
   width: 100%;
+  align-items: center;
+  height: 50px;
+  box-sizing: border-box;
+  padding: 16px;
   display: flex;
+  justify-content: space-between;
+
+  .title {}
+
+  .logout {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+  i {
+    color: var(--warning-color);
+  }
+
 }
 
+hr {
+  margin: 0;
+  padding: 0;
+  color: var(--border-color);
+}

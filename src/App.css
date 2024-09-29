@@ -27,7 +27,7 @@ body {
     max-width: 400px; 
     height: 100vh;
     margin: 0;
-    padding: 16px;
+    /* padding: 16px; */
     box-sizing: border-box;
     background-color: #09090b;
 }
