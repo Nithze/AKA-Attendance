@@ -11,7 +11,7 @@ export const Dashboard = () => {
                     </div>
                     <div className="logout">
                         <p>Azhar</p>
-                        <i class='bx bx-log-out'></i>
+                        <i className='bx bx-log-out'></i>
                     </div>
                 </div>
                 {/* navbar end */}
@@ -25,6 +25,32 @@ export const Dashboard = () => {
                     <div className="role">
                         <div className="role">Barista</div>
                         <div className="salary">Salary Rp 3.000.000</div>
+                    </div>
+                </div>
+                {/* end profile */}
+
+                <div className="action-container">
+                    <div className="present">
+                        <div className="left">
+                            <div className="icon">
+                                <i className='bx bx-expand-horizontal'></i>
+                            </div>
+                            <div className="title">
+                                <p className="header">Present</p>
+                                <p className="subheader">07:00 PM</p>
+                            </div>
+                        </div>
+                        <div className="right">
+                            <p className="header">07:00 PM - 12:00 AM</p>
+                            <p className="subheader">Click To Present</p>
+                        </div>
+                    </div>
+
+                    <div className="other-action">
+                        <div className="left">
+                        </div>
+                        <div className="right">
+                        </div>
                     </div>
                 </div>
 
