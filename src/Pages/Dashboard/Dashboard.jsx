@@ -10,7 +10,7 @@ export const Dashboard = () => {
                         <p>Attendance</p>
                     </div>
                     <div className="logout">
-                        <p>Azhar</p>
+                        {/* <p>Azhar</p> */}
                         <i className='bx bx-log-out'></i>
                     </div>
                 </div>
