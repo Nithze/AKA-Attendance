@@ -163,16 +163,16 @@ const Login = () => {
                 localStorage.setItem('userData', JSON.stringify({ id: data.id }));
 
                 // Tampilkan toast sukses
-                toast.success('Login berhasil!');
+                toast.success('Login succes redirect to dashboard');
 
                 // Redirect ke dashboard
                 navigate('/dashboard');
             } else {
                 // Tampilkan toast error
-                toast.error('Login gagal. Cek kembali kredensial Anda.');
+                toast.error('Login Error check our credential');
             }
         } catch (error) {
-            toast.error('Terjadi kesalahan. Coba lagi.');
+            toast.error('Error.');
         }
     };
 

@@ -148,6 +148,11 @@ export const Dashboard = () => {
     if (!userData) {
         return <p>User not found.</p>;
     }
+    const handleLogout = () => {
+    localStorage.removeItem('userData'); // Menghapus data dari localStorage
+    window.location.href = '/'; // Mengarahkan ke halaman login
+};
+
 
     return (
         <div className="container">
@@ -155,7 +160,7 @@ export const Dashboard = () => {
                 <div className="title">
                     <p>Attendance</p>
                 </div>
-                <div className="logout">
+                <div className="logout" onClick={handleLogout} style={{ cursor: 'pointer' }}>
                     <p>{userData.fullName}</p>
                     <i className='bx bx-log-out'></i>
                 </div>
