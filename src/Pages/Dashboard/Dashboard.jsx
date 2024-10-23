@@ -74,86 +74,38 @@ export const Dashboard = () => {
         }
     };
 
-    // const handlePresent = async () => {
-    //     if (!userData) return;
-    //
-    //     const locations = await fetchLocation();
-    //     if (locations && locations.length > 0) {
-    //         const targetCoordinates = locations[0].coordinates;
-    //
-    //         const distance = calculateDistance(userCoordinates, targetCoordinates);
-    //         if (distance <= 1.6) { // 200 meter
-    //             try {
-    //                 const response = await fetch(`${apiUrl}/api/attendance/checkin`, {
-    //                     method: 'POST',
-    //                     headers: {
-    //                         'Content-Type': 'application/json',
-    //                     },
-    //                     body: JSON.stringify({ employeeId: userData._id }),
-    //                 });
-    //
-    //                 const responseData = await response.json();
-    //                 if (response.ok) {
-    //                     toast.success(responseData.message || 'Check-in successful');
-    //                 } else {
-    //                     toast.error(responseData.message || 'Check-in error');
-    //                 }
-    //             } catch (error) {
-    //                 toast.error('Error during check-in.');
-    //             }
-    //         } else {
-    //             toast.error('You are too far from the location.');
-    //         }
-    //     }
-    // };
     const handlePresent = async () => {
-    if (!userData) return;
+        if (!userData) return;
 
-    try {
-        // Kirim request check-in ke backend terlebih dahulu
-        const response = await fetch(`${apiUrl}/api/attendance/checkin`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ employeeId: userData._id }),
-        });
+        const locations = await fetchLocation();
+        if (locations && locations.length > 0) {
+            const targetCoordinates = locations[0].coordinates;
 
-        const responseData = await response.json();
-        if (response.ok) {
-            toast.success(responseData.message || 'Check-in initiated, validating location...');
+            const distance = calculateDistance(userCoordinates, targetCoordinates);
+            if (distance <= 1.6) { // 200 meter
+                try {
+                    const response = await fetch(`${apiUrl}/api/attendance/checkin`, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({ employeeId: userData._id }),
+                    });
 
-            // Setelah sukses check-in, ambil lokasi pengguna
-            navigator.geolocation.getCurrentPosition(
-                async (position) => {
-                    const { latitude, longitude } = position.coords;
-                    setUserCoordinates([latitude, longitude]);
-
-                    const locations = await fetchLocation();
-                    if (locations && locations.length > 0) {
-                        const targetCoordinates = locations[0].coordinates;
-
-                        const distance = calculateDistance([latitude, longitude], targetCoordinates);
-                        if (distance <= 1.6) { // 200 meter
-                            toast.success('Check-in location validated successfully.');
-                        } else {
-                            toast.error('You are too far from the location.');
-                        }
+                    const responseData = await response.json();
+                    if (response.ok) {
+                        toast.success(responseData.message || 'Check-in successful');
+                    } else {
+                        toast.error(responseData.message || 'Check-in error');
                     }
-                },
-                (error) => {
-                    console.error('Error getting location', error);
-                    toast.error('Location access denied.');
+                } catch (error) {
+                    toast.error('Error during check-in.');
                 }
-            );
-        } else {
-            toast.error(responseData.message || 'Check-in error.');
+            } else {
+                toast.error('You are too far from the location.');
+            }
         }
-    } catch (error) {
-        toast.error('Error during check-in.');
-    }
-};
-
+    };
 
     const handleCheckout = async () => {
         if (!attendanceId) return;
