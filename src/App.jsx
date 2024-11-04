@@ -11,10 +11,16 @@ function App() {
         <Router>
             <Toaster
                 toastOptions={{
+                    // style: {
+                    //     background: '#222',
+                    //     color: '#f9f9f9',
+                    //     border: '1px solid #444',
+                    // },
                     style: {
-                        background: '#222',
+                        backgroundColor: 'rgba(0, 0, 0, 0.2)',
                         color: '#f9f9f9',
-                        border: '1px solid #444',
+                        border: '1px solid #222',
+                        backdropFilter: 'blur(4px)',
                     },
                 }}
             />

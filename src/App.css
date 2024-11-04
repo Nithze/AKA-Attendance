@@ -13,18 +13,19 @@ body {
     margin: 0;
     /* padding: 16px; */
     box-sizing: border-box;
-    background-color: #09090b;
+    /* background-color: #09090b; */
+    background: rgb(14, 14, 14);
+    background: linear-gradient(15deg, rgba(14, 14, 14, 1) 0%, rgba(0, 0, 0, 1) 100%);
 }
 
 @media (min-width: 768px) {
     .container {
-        max-width: 600px; 
+        max-width: 600px;
     }
 }
 
 @media (min-width: 1024px) {
     .container {
-        max-width: 800px; 
+        max-width: 800px;
     }
 }
-
