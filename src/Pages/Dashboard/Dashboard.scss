@@ -1,3 +1,21 @@
+.card-aka {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+// .card-aka img {
+//   margin-top: 30px;
+//   width: 100%;
+// }
+.card-aka img {
+    // margin-top: 30px;
+    margin-bottom: 40px;
+    width: 100%;
+    filter: brightness(0.7) saturate(1.5);
+}
+
+
 // .popup {
 //   position: fixed;
 //   top: 0;
@@ -34,21 +52,23 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(4px);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1000;
-  animation: fadeIn 0.3s ease; /* Animasi fade-in */
+  animation: fadeIn 0.3s ease;
+  /* Animasi fade-in */
 }
 
 .popup.fade-out {
-  animation: fadeOut 0.3s ease forwards; /* Animasi fade-out */
+  animation: fadeOut 0.3s ease forwards;
+  /* Animasi fade-out */
 }
 
 .popup-content {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 20px;
   border-radius: 8px;
   width: 90%;
@@ -64,6 +84,7 @@
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -73,16 +94,22 @@
   from {
     opacity: 1;
   }
+
   to {
     opacity: 0;
   }
+}
+h4 {
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 
 label {
   display: block;
   font-size: 12px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   color: #777;
   /* Light label color for contrast */
 }
@@ -90,11 +117,13 @@ label {
 textarea {
   height: 100px;
   border-radius: 4px;
-  border: 1px solid #222; /* Darker border for textarea */
+  border: 1px solid #222;
+  /* Darker border for textarea */
   outline: none;
   padding: 10px;
   resize: none;
-  background: #000;
+  // background: rgba(0, 0, 0, 0.4);
+  background: rgba(22, 22, 22, 0.3);
   color: #f1f1f1;
   margin-bottom: 20px;
 }
@@ -105,15 +134,17 @@ textarea {
   width: 100%;
   gap: 10px;
 }
+
 button {
-    -webkit-tap-highlight-color: transparent;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 a {
   -webkit-tap-highlight-color: transparent;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
 button {
   padding: 10px 15px;
   border: none;
@@ -124,21 +155,25 @@ button {
 button[type="submit"] {
   background-color: #000;
   color: #fff;
-  border: 1px solid #222; /* Darker border for textarea */
+  border: 1px solid #222;
+  /* Darker border for textarea */
   width: 50%;
 }
+
 button[type="submit"]:active {
-    background-color: #000;
-    outline: 1px solid #999;
+  background-color: #000;
+  outline: 1px solid #999;
 }
+
 button[type="button"]:active {
-    background-color: #000;
-    outline: 1px solid #999;
+  background-color: #000;
+  outline: 1px solid #999;
 }
 
 button[type="button"] {
   background-color: #000;
-  border: 1px solid #222; /* Darker border for textarea */
+  border: 1px solid #222;
+  /* Darker border for textarea */
   color: #ff0000;
   width: 50%;
 }
@@ -177,7 +212,7 @@ button[type="button"] {
 }
 
 .profile {
-  padding: 16px;
+  padding: 30px;
   gap: 5px;
   width: 100%;
   display: flex;
@@ -240,7 +275,7 @@ button[type="button"] {
     border: 1px solid #222;
 
     padding: 5px 20px 5px 20px;
-    border-radius: 4px;
+    border-radius: 8px;
 
     .left {
       height: 100%;
@@ -253,7 +288,7 @@ button[type="button"] {
         color: #777;
         background-color: #101010;
         padding: 5px;
-        border-radius: 4px;
+        border-radius: 8px;
         display: flex;
         align-self: center;
       }
@@ -321,7 +356,7 @@ button[type="button"] {
       background-color: #000;
       border: 1px solid #222;
 
-      border-radius: 4px;
+      border-radius: 8px;
       padding: 5px 20px 5px 20px;
       box-sizing: border-box;
       gap: 15px;
@@ -331,7 +366,7 @@ button[type="button"] {
         color: #777;
         background-color: #101010;
         padding: 5px;
-        border-radius: 4px;
+        border-radius: 8px;
         display: flex;
         align-self: center;
       }
@@ -370,9 +405,9 @@ button[type="button"] {
       user-select: none;
       width: 50%;
       height: 100px;
-      // background-color: #000;
+      background-color: #000;
       border: 1px solid #222;
-      border-radius: 4px;
+      border-radius: 8px;
       padding: 5px 20px 5px 20px;
       gap: 15px;
 
@@ -381,7 +416,7 @@ button[type="button"] {
         color: #777;
         background-color: #101010;
         padding: 5px;
-        border-radius: 4px;
+        border-radius: 8px;
         display: flex;
         align-self: center;
       }

@@ -839,6 +839,9 @@ export const Dashboard = () => {
             </div>
 
             <div className="action-container">
+                <div className="card-aka">
+                    <img src="./aka.png" alt="" />
+                </div>
                 <div className="present" onClick={handlePresent}>
                     <div className="left">
                         <div className="icon">
@@ -881,21 +884,30 @@ export const Dashboard = () => {
                         </div>
                     </div>
                 </div>
+                {/* <div className="card-aka"> */}
+                {/*     <img src="./aka.png" alt="" /> */}
+                {/* </div> */}
             </div>
 
-            <div className="list-attendance">
-            </div>
+
+
+
+
+
+
+
 
             {showRequestForm && (
                 <div className={`popup ${isClosing ? 'fade-out' : ''}`}>
                     <div className="popup-content">
-                        <h2>Request Absence</h2>
+                        <h4>Request Absence</h4>
                         <form onSubmit={handleSubmitRequest}>
                             <div className="form-group">
                                 <label htmlFor="reason">Reason and explanation of absence</label>
                                 <textarea
                                     id="reason"
                                     value={requestReason}
+                                    placeholder='reason....'
                                     onChange={(e) => setRequestReason(e.target.value)}
                                     required
                                 />
