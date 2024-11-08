@@ -1,3 +1,22 @@
+.password-group {
+  position: relative;
+}
+
+.password-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #fff;
+  user-select: none;
+}
+
 body,
 html {
   background-color: #09090b;
