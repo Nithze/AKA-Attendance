@@ -1,5 +1,5 @@
-![screenshot_2024-11-21T15:01:11](https://github.com/user-attachments/assets/4d0105b7-9642-4052-ba7c-cf5b48513fd0)
 
+![Dash Attendance](https://github.com/user-attachments/assets/2d4a8636-f84d-4e21-a1b1-b1118c41e8ad)
 
 # React + Vite
 
